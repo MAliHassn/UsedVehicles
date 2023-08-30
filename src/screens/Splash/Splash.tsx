@@ -2,7 +2,7 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Colors } from '../../constants/Colors';
 import { images } from '../../constants/Images';
-import { SCREEN_WIDTH } from '../../constants/Screen';
+import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../../constants/Screen';
 import { Fonts } from '../../constants/Fonts';
 import {useSplash} from './Hooks';
 
@@ -17,6 +17,12 @@ const Splash = () => {
         <Text style={styles.text}>Powered by</Text>
         <Image source={images.rak_bank} style={styles.rak_bank_image} resizeMethod="auto" />
       </View>
+
+      <Image
+        source={images.splashBg}
+        style={styles.bottomBg}
+        resizeMode="stretch"
+      />
 
     </View>
   );
@@ -51,5 +57,12 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     height: "auto",
     width: SCREEN_WIDTH * 0.15,
+  },
+  bottomBg: {
+    position: 'absolute',
+    bottom: 30,
+    width: SCREEN_WIDTH,
+    height:SCREEN_HEIGHT/2.5,
+    zIndex:-1
   },
 });

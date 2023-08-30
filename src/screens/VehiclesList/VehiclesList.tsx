@@ -23,7 +23,7 @@ const VehiclesList = () => {
   const renderItem = useCallback(
     ({ item, index }: ListRenderItemInfo<IVehiclesItem>) => {
       return <VehiclesListItem key={index.toString()} item={item} callBackFav={() => {
-        console.log("fvunfav")
+        console.log("pressed")
       }} />;
     }, []);
 
@@ -65,6 +65,7 @@ const VehiclesList = () => {
 
           <View style={styles.filter}>
             <TouchableOpacity
+              testID='filter'
               style={styles.icon}
               onPress={() => {
                 navigateTo()

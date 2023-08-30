@@ -2,14 +2,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Routes from './routes';
+import Stacks from './routes/Stacks';
 
 const App = () => {
   return (
         <SafeAreaProvider>
           <StatusBar barStyle={'dark-content'} />
           <NavigationContainer>
-            <Routes />
+            <Stacks />
           </NavigationContainer>
         </SafeAreaProvider>
   );

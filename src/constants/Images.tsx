@@ -1,5 +1,6 @@
 const images = {
     //general ui
+    splashBg: require('../assets/ui/splash_bg.png'),
     rak_bank: require('../assets/ui/rakbank-logo-news.png'),
     app_logo: require('../assets/ui/applogo.png'),
     add: require('../assets/ui/add.png'),

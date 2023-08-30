@@ -12,7 +12,8 @@ const TreeFilter = () => {
     clickOnNodes,
     filter_data,
     checkedNode,
-    checkedChilds
+    checkedChilds,
+    returnRow
   } = useFilter()
 
   return (
@@ -35,25 +36,17 @@ const TreeFilter = () => {
         start={{ x: 1, y: 0 }}
         end={{ x: 0.2, y: 0.9 }}
       >
-        <View style={styles.row}>
-          <Text style={styles.subtext}>{"tree ids:"}</Text>
-          {checkedChilds?.ids?.map((item:any) => {
-            return (
-              <Text style={styles.subtext}>{"->"} {item}</Text>
-            )
-          })}
-          <Text style={styles.subtext}>{"->"} {checkedNode?.id}</Text>
-        </View>
 
-        <View style={styles.row}>
-          <Text style={styles.subtext}>{"tree titles:"}</Text>
-          {checkedChilds?.titles?.map((item:any) => {
-            return (
-              <Text style={styles.subtext}>{"->"} {item}</Text>
-            )
-          })}
-          <Text style={styles.subtext}>{"->"} {checkedNode?.title}</Text>
-        </View>
+        {returnRow(
+          "tree ids:",
+          checkedChilds?.ids,
+          checkedNode?.id
+        )}
+        {returnRow(
+          "tree titles:",
+          checkedChilds?.titles,
+          checkedNode?.title
+        )}
 
       </LinearGradient>
 

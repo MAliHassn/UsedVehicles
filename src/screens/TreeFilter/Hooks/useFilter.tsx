@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { getParentInfo } from '../../../utils';
 import { Data } from '../../../constants/Data';
+import { StyleSheet, Text, View } from 'react-native';
+import { Colors } from '../../../constants/Colors';
+import { Fonts } from '../../../constants/Fonts';
 
 export default () => {
     interface CheckedChilds {
@@ -118,6 +121,20 @@ export default () => {
         }
     }
 
+    const returnRow = (header: string, titles: CheckedNodes[], body: string) => {
+        return (
+            <View style={styles.row}>
+                <Text style={styles.subtext}>{header}{":"}</Text>
+                {titles?.map((item: any) => {
+                    return (
+                        <Text style={styles.subtext}>{"->"} {item}</Text>
+                    )
+                })}
+                <Text style={styles.subtext}>{"->"} {body}</Text>
+            </View>
+        )
+    }
+
 
     return {
         realTimeChanges,
@@ -127,5 +144,17 @@ export default () => {
         filter_data,
         checkedNode,
         checkedChilds,
+        returnRow
     };
 };
+
+const styles = StyleSheet.create({
+    row: {
+        flexDirection: "row",
+        justifyContent: "center"
+    },
+    subtext: {
+        color: Colors.black,
+        fontSize: Fonts.sub_body
+    },
+});

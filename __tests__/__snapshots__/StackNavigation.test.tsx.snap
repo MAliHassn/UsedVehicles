@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing react navigation page contains 3 images 1`] = `[Function]`;
+
+exports[`Testing react navigation page contains list of vehicles data  1`] = `[Function]`;
+
+exports[`Testing react navigation page contains tree filter  1`] = `[Function]`;
