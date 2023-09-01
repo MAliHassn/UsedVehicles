@@ -26,7 +26,6 @@ const VehiclesListItem = (props: IListProps) => {
     <Pressable
       style={styles.containerV}
       onPress={() => {
-        console.log('details');
       }}>
       <View>
         <Image source={item.image} style={styles.image} resizeMethod="auto" />

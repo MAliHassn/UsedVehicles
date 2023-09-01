@@ -92,6 +92,31 @@ export default () => {
     setVehiclesData(filteredData);
   };
 
+  //TO DO WORK
+  // const  sports_list = async() => {
+  //   let url = "Dummmmmyyyyy.com"
+  //   const requestOptions = {
+  //     method: 'GET',
+  //     headers: {
+  //       'Accept': 'application/json',
+  //       'Content-Type': 'application/json',
+  //     },
+  //   };
+  //   try {
+  //     let apiCall = await fetch(url, requestOptions);
+  //     let responseData = await apiCall.json();
+  //     if (responseData.status == "success") {
+  //       const data = responseData.data
+  //     } else {
+  //       console.log("failed", responseData.message)
+  //     }
+  //   }
+  //   catch (error) {
+  //     console.log("error", error)
+
+  //   }
+  // }
+
   return {
     navigateTo,
     filterUpdate,

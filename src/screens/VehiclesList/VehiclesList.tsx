@@ -35,7 +35,6 @@ const VehiclesList = () => {
           key={index.toString()}
           item={item}
           callBackFav={() => {
-            console.log('pressed');
           }}
         />
       );

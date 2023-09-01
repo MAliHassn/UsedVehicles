@@ -60,7 +60,6 @@ const TreeFilter = () => {
         end={{x: 0.2, y: 0.9}}>
         <Pressable
           onPress={() => {
-            console.log('');
           }}>
           <Text style={styles.text}>{'APPLY'}</Text>
         </Pressable>
