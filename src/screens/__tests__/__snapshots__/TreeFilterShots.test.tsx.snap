@@ -1,0 +1,427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+    }
+  }
+  testID="tree-filter"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "marginTop": -10,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "height": 50,
+          "justifyContent": "center",
+          "width": 50,
+        }
+      }
+    >
+      <Image
+        resizeMethod="auto"
+        source={
+          {
+            "testUri": "../../../src/assets/ui/back.png",
+          }
+        }
+        style={
+          {
+            "aspectRatio": 1,
+            "height": 22,
+            "width": 22,
+          }
+        }
+      />
+    </View>
+    <Image
+      resizeMethod="auto"
+      source={
+        {
+          "testUri": "../../../src/assets/ui/applogo.png",
+        }
+      }
+      style={
+        {
+          "aspectRatio": 2,
+          "height": 70,
+          "width": "auto",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "flex": 1,
+        "marginBottom": 110,
+        "padding": 10,
+        "paddingTop": 0,
+      }
+    }
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        {
+          "paddingBottom": 20,
+        }
+      }
+      showsVerticalScrollIndicator={false}
+    >
+      <View>
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "paddingVertical": 5,
+              }
+            }
+          >
+            <Image
+              resizeMethod="auto"
+              source={
+                {
+                  "testUri": "../../../src/assets/ui/add.png",
+                }
+              }
+              style={
+                {
+                  "aspectRatio": 1,
+                  "height": 22,
+                  "width": 22,
+                }
+              }
+            />
+            <Text
+              style={
+                {
+                  "color": "#666666",
+                  "fontSize": 12,
+                  "paddingStart": 3,
+                }
+              }
+            >
+              Cars
+            </Text>
+          </View>
+        </View>
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "paddingVertical": 5,
+              }
+            }
+          >
+            <Image
+              resizeMethod="auto"
+              source={
+                {
+                  "testUri": "../../../src/assets/ui/add.png",
+                }
+              }
+              style={
+                {
+                  "aspectRatio": 1,
+                  "height": 22,
+                  "width": 22,
+                }
+              }
+            />
+            <Text
+              style={
+                {
+                  "color": "#666666",
+                  "fontSize": 12,
+                  "paddingStart": 3,
+                }
+              }
+            >
+              Trucks
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+  <BVLinearGradient
+    colors={
+      [
+        1291845632,
+        855638016,
+      ]
+    }
+    endPoint={
+      {
+        "x": 0.2,
+        "y": 0.9,
+      }
+    }
+    locations={null}
+    startPoint={
+      {
+        "x": 1,
+        "y": 0,
+      }
+    }
+    style={
+      {
+        "alignItems": "center",
+        "bottom": 80,
+        "elevation": 8,
+        "height": 40,
+        "justifyContent": "center",
+        "left": 0,
+        "marginHorizontal": 10,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontSize": 10,
+          }
+        }
+      >
+        tree ids:
+        :
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontSize": 10,
+          }
+        }
+      >
+        -&gt;
+         
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontSize": 10,
+          }
+        }
+      >
+        tree titles:
+        :
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#000000",
+            "fontSize": 10,
+          }
+        }
+      >
+        -&gt;
+         
+      </Text>
+    </View>
+  </BVLinearGradient>
+  <BVLinearGradient
+    colors={
+      [
+        4293263360,
+        4288217088,
+      ]
+    }
+    endPoint={
+      {
+        "x": 0.2,
+        "y": 0.9,
+      }
+    }
+    locations={null}
+    startPoint={
+      {
+        "x": 1,
+        "y": 0,
+      }
+    }
+    style={
+      {
+        "alignItems": "center",
+        "bottom": 20,
+        "elevation": 8,
+        "height": 50,
+        "justifyContent": "center",
+        "left": 0,
+        "marginHorizontal": 10,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontSize": 18,
+          }
+        }
+      >
+        APPLY
+      </Text>
+    </View>
+  </BVLinearGradient>
+</View>
+`;
