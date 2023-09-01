@@ -82,6 +82,7 @@ const useStyles = () => {
       padding: 5,
       paddingHorizontal: 10,
       flexDirection: 'row',
+      backgroundColor:"white"
     },
     icon: {
       width: 14,
@@ -119,11 +120,11 @@ const useStyles = () => {
       margin: 5,
       shadowColor: '#000',
       shadowOffset: {
-        width: 1,
-        height: 2,
+        width: 0,
+        height: 1,
       },
-      shadowOpacity: 3,
-      shadowRadius: 10.32,
+      shadowOpacity:0.1,
+      shadowRadius: 8,
       elevation: 6,
       backgroundColor: colors.white,
       maxWidth:(SCREEN_WIDTH/2)-10
