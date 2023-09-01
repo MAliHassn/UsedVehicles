@@ -1,13 +1,13 @@
 // Navigation types
 
-type StackNavigationProp = import('@react-navigation/native-stack').StackNavigationProp;
+type StackNavigationProp =
+  import('@react-navigation/native-stack').StackNavigationProp;
 
 type PrimaryStackParamList = {
   VerifyAccount: {};
   Splash: undefined;
   Home: undefined;
 };
-
 
 type SplashNavigationProp = StackNavigationProp<
   PrimaryStackParamList,
@@ -23,5 +23,3 @@ type TreeFilterNavigationProp = StackNavigationProp<
   PrimaryStackParamList,
   'TreeFilter'
 >;
-
-

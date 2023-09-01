@@ -1,13 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { NavigationContainer } from '@react-navigation/native';
-import {TreeFilter} from '../src/screens/TreeFilter';
-import { waitFor } from '@testing-library/react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {Splash} from '../Splash';
+import {waitFor} from '@testing-library/react-native';
 
-it('renders correctly', async() => {
+it('renders correctly', async () => {
   const component = (
     <NavigationContainer>
-      <TreeFilter />
+      <Splash />
     </NavigationContainer>
   );
   const rendered = renderer.create(component).toJSON();

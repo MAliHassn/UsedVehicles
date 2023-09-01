@@ -1,13 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { NavigationContainer } from '@react-navigation/native';
-import {Splash} from '../src/screens/Splash';
-import { waitFor } from '@testing-library/react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {VehiclesList} from '../VehiclesList';
+import {waitFor} from '@testing-library/react-native';
 
-it('renders correctly', async() => {
+it('renders correctly', async () => {
   const component = (
     <NavigationContainer>
-      <Splash />
+      <VehiclesList />
     </NavigationContainer>
   );
   const rendered = renderer.create(component).toJSON();

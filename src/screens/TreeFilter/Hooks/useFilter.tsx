@@ -6,16 +6,7 @@ import { Colors } from '../../../constants/Colors';
 import { Fonts } from '../../../constants/Fonts';
 
 export default () => {
-    interface CheckedChilds {
-        ids: number[];
-        titles: string[];
-    }
-    interface CheckedNodes {
-        id: number;
-        title: string;
-    }
-
-
+    
     const filters: Node[] = Data.treeData;
     const [filter_data, setFilter_data] = useState(filters);
     const [stateUpdated, setStateUpdated] = useState(false);
@@ -107,7 +98,6 @@ export default () => {
         let data = filters;
         updateCheck(data, v.id, !v.check)
         updateChecksBasedOnParent(data);
-        // dispatch(changeFilterData(data))
         setFilter_data(data)
         setStateUpdated(true)
 
@@ -121,7 +111,7 @@ export default () => {
         }
     }
 
-    const returnRow = (header: string, titles: CheckedNodes[], body: string) => {
+    const returnRow = (header: string, titles: CheckedNodes[], body: string | number) => {
         return (
             <View style={styles.row}>
                 <Text style={styles.subtext}>{header}{":"}</Text>
